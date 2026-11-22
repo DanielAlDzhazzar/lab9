@@ -1,0 +1,574 @@
+    1  git remote set-url origin git@github.com:DanielAlDzhazzar/devopsWeek1.git
+    2  cd devopsWeek1
+    3  git remote -v
+    4  git remote set-url origin git@github.com:DanielAlDzhazzar/devopsWeek1.git
+    5  git remote -v
+    6  git push
+    7  git add .
+    8  git commit -m "Changed https to ssh"
+    9  git push
+   10  cd devops/week1
+   11  la
+   12  ls
+   13  cd devopsWeek1
+   14  ls
+   15  cd devops
+   16  mkdir week2
+   17  ls
+   18  cd week2
+   19  cd ~/devopsWeek1
+   20  git pull origin main
+   21  ssh add -1
+   22  ssh-add -1
+   23  eval "$(ssh-agent -s)"
+   24  ssh-add ~/.ssh/id_ed25519
+   25  ssh-add -l
+   26  ssh-keygen -t ed25519 -C "danaldgazzar@gmail.com"
+   27  ssh-add ~/.ssh/github_devops
+   28  cat ~/.ssh/github_devops.pub
+   29  nano ~/.ssh/config
+   30  ssh -T git@github.com
+   31  ls
+   32  git pull origin main
+   33  cd devops/week1
+   34  ls
+   35  nano hellow.sh
+   36  ./hellow.sh
+   37  cd ~/devopsWeek1
+   38  git add devops/week1/hellow.sh
+   39  git commit -m "add week2 line"
+   40  git push origin main
+   41  git log --oneline
+   42  git tag ver1 9876543
+   43  git log --oneline
+   44  git tag ver1 cea8740
+   45  git tag ver2 14a2f40
+   46  git tag ver3 5bb0d1e
+   47  git log --oneline
+   48  git push origin --tags
+   49  cd ~
+   50  mkdir week2tag
+   51  cd week2tag
+   52  git clone git@github.com:DanielAlDzhazzar/devopsWeek1.git .
+   53  ls
+   54  git fetch --all --tags
+   55  git tag
+   56  git switch -c tag-test ver1
+   57  git branch
+   58  cd devops/week1
+   59  nano hellow.sh
+   60  ./devops/week1/hellow.sh
+   61  ./hellow.sh
+   62  cd ~/week2tag
+   63  git add devops/week1/hellow.sh
+   64  git commit -m "Update hellow.sh to say tag test"
+   65  git push tag-test
+   66  git push -u origin tag-test
+   67  ls
+   68  mkdir count
+   69  ls
+   70  cd count
+   71  git remote add origin https://github.com/DanielAlDzhazzar/devsopsProj.git
+   72  git init
+   73  git commit -m "first commit"
+   74  git branch -M main
+   75  git remote add origin https://github.com/DanielAlDzhazzar/devsopsProj.git
+   76  git push -u origin main
+   77  ls
+   78  nano count1.sh
+   79  chmod +x count1.sh
+   80  nano count2.sh
+   81  nano count3.sh
+   82  nano count4.sh
+   83  nano count5.sh
+   84  nano count6.sh
+   85  nano count7.sh
+   86  nano count8.sh
+   87  nano count9.sh
+   88  nano count10.sh
+   89  ./count1.sh
+   90  chmod +x count2.sh
+   91  ./count1.sh
+   92  nano count1.sh
+   93  ./count1.sh
+   94  nano count1.sh
+   95  ./count1.sh
+   96  nano count2.sh
+   97  nano count3.sh
+   98  nano count4.sh
+   99  nano count5.sh
+  100  nano count6.sh
+  101  nano count7.sh
+  102  nano count8.sh
+  103  nano count9.sh
+  104  nano count10.sh
+  105  chmod +x count3.sh
+  106  chmod +x count4.sh
+  107  chmod +x count5.sh
+  108  chmod +x count6.sh
+  109  chmod +x count7.sh
+  110  chmod +x count8.sh
+  111  chmod +x count9.sh
+  112  chmod +x count10.sh
+  113  ./count1.sh
+  114  ls
+  115  git push -u origin main
+  116  git add .
+  117  git push -u origin main
+  118  git remote add origin https://github.com/DanielAlDzhazzar/devsopsProj.git
+  119  git branch -M main
+  120  git push -u origin main
+  121  git commit -m "initial commit"
+  122  git push -u origin main
+  123  git credential fill
+  124  git push -u origin main
+  125  ls
+  126  nano count10.sh
+  127  ./count1.sh
+  128  git commit -m "fix #12"
+  129  git add count10.sh
+  130  git commit -m "fix #12"
+  131  git push origin main
+  132  git add count10.sh
+  133  git rebase -i HEAD~2
+  134  git commit -m "Fixes #12: Update output to TEN"
+  135  nano count10.sh
+  136  git reset --soft HEAD~1
+  137  git push origin <branch-name> --force-with-lease
+  138  git push origin main --force-with-lease
+  139  nano count10.sh
+  140  git commit -m "Fixes #12: Update output to TEN"
+  141  git push origin main
+  142  git reset --soft HEAD~1
+  143  git push origin main --force-with-lease
+  144  git commit -m "Fixes #12: Update output to TEN"
+  145  git push origin main
+  146  nano count9.sh
+  147  ./count1.sh
+  148  git commit -m "Fixes #13: Update output to NINE"
+  149  git add count9.sh
+  150  git commit -m "Fixes #13: Update output to NINE"
+  151  git push origin main
+  152  nano count8.sh
+  153  checkout count8.sh
+  154  git checkout main
+  155  ls
+  156  rmdir count
+  157  rm rf count
+  158  rm -rf count
+  159  ls
+  160  mkdir count
+  161  cd count
+  162  ls
+  163  nano count1.sh
+  164  nano count2.sh
+  165  chmod -x count1.sh
+  166  chmod -x count2.sh
+  167  ./count1.sh
+  168  chmod +x count1.sh
+  169  ./count1.sh
+  170  nano count1.sh
+  171  ./count1.sh
+  172  chmod +x count2.sh
+  173  ./count1.sh
+  174  nano count2.sh
+  175  nano count3.sh
+  176  nano count4.sh
+  177  nano count5.sh
+  178  nano count6.sh
+  179  nano count7.sh
+  180  nano count8.sh
+  181  nano count9.sh
+  182  rm -rf count
+  183  ls
+  184  mkdir count
+  185  cd count
+  186  nano count1.sh
+  187  nano count2.sh
+  188  nano count3.sh
+  189  nano count4.sh
+  190  nano count5.sh
+  191  nano count6.sh
+  192  nano count7.sh
+  193  nano count8.sh
+  194  nano count9.sh
+  195  nano count10.sh
+  196  chmod +x count1.sh
+  197  chmod +x count2.sh
+  198  chmod +x count3.sh
+  199  chmod +x count4.sh
+  200  chmod +x count5.sh
+  201  chmod +x count6.sh
+  202  chmod +x count7.sh
+  203  chmod +x count8.sh
+  204  chmod +x count9.sh
+  205  chmod +x count10.sh
+  206  ./count1.sh
+  207  ls -al ~/.ssh
+  208  eval "$(ssh-agent -s)"
+  209  ssh-add ~/.ssh/id_ed25519
+  210  clear
+  211  ssh-keygen -t ed25519 -C "danaldgazzar@gmail.com"
+  212  eval "$(ssh-agent -s)"
+  213  ssh-add ~/.ssh/id_ed25519_github_new
+  214  ssh-add ~/.ssh/id_ed25519
+  215  cat ~/.ssh/id_ed25519.pub
+  216  ssh -T git@github.com
+  217  ls -l ~/.ssh/id_ed25519
+  218  eval "$(ssh-agent -s)"
+  219  ssh-add ~/.ssh/id_ed25519
+  220  cat ~/.ssh/id_ed25519.pub
+  221  ssh -i ~/.ssh/id_ed25519 -o IdentitiesOnly=yes -T git@github.com
+  222  ls
+  223  git clone git@github.com:DanielAlDzhazzar/devsopsProj.git
+  224  nano ~/.ssh/config
+  225  ssh -T git@github.com
+  226  git clone git@github.com:DanielAlDzhazzar/devsopsProj.git
+  227  ;s
+  228  ls
+  229  cp count*.sh devsopsProj/
+  230  cd devsopsProj
+  231  ls
+  232  git add count*.sh
+  233  git commit -m "Add count scripts"
+  234  git push
+  235  git branch --show-current
+  236  ./count1.sh
+  237  nano count10.sh
+  238  ./count1.sh
+  239  git add count10.sh
+  240  git commit -m "Fix count10 output to TEN, fixes #13"
+  241  git push origin main
+  242  ls
+  243  cat ~/.ssh/id_ed25519.pub
+  244  ls
+  245  devopsCollab
+  246  mkdir devopsCollab
+  247  cd devopsCollab
+  248  nano hello.txt
+  249  git init
+  250  git commit -m "first commit"
+  251  git add .
+  252  git commit -m "first commit"
+  253  git branch -M main
+  254  git remote add origin git@github.com:pearse1104/A00082751.git
+  255  git push -u origin main
+  256  ls
+  257  mkdir vq
+  258  rm vq
+  259  rmdir vq
+  260  clear
+  261  mkdir v1
+  262  cd v1
+  263  git clone -b main https://github.com/DanielAlDzhazzar/devsopsProj
+  264  ls
+  265  cd devsopsProj
+  266  mkdir ONE-V1
+  267  ls
+  268  cd ~
+  269  mkdir v2
+  270  cd v2
+  271  git clone -b main https://github.com/DanielAlDzhazzar/devsopsProj
+  272  cd devopsProj
+  273  ls
+  274  cd devsopsProj
+  275  mkdir ONE-V2
+  276  cd ~/v1/devsopsProj
+  277  nano count1.sh
+  278  ./count1.sh
+  279  git status
+  280  rmdir ONE-V1
+  281  git checkout -b ONE-V1
+  282  git add count1
+  283  git add count1.sh
+  284  nano count1.sh
+  285  git add count1.sh
+  286  ./count1.sh
+  287  git commit -m "Fixed count1 output to ONE(1), fixes #14"
+  288  git push -u origin ONE-V1
+  289  ssh -T git@github.com
+  290  git push -u origin ONE-V1
+  291  ls -la ~/.ssh
+  292  eval "$(ssh-agent -s)"
+  293  ssh-add ~/.ssh/id_ed25519
+  294  git push -u origin ONE-V1
+  295  git remote -v
+  296  git remote set-url origin git@github.com:DanielAlDzhazzar/devsopsProj.git
+  297  git remote -v
+  298  git push -u origin ONE-V1
+  299  cd ~/v2/devsopsProj
+  300  rmdir ONE-V2
+  301  git checkout -b ONE-V2
+  302  nano count1.sh
+  303  ./count1.sh
+  304  nano count1.sh
+  305  ./count1.sh
+  306  git remote -v
+  307  git remote set-url origin git@github.com:DanielAlDzhazzar/devsopsProj.git
+  308  git remote -v
+  309  git add count1.sh
+  310  git commit -m "Fixed count1 output to 1(ONE), fixes #15"
+  311  git push -u origin ONE-V2
+  312  cd ~
+  313  mkdir mergeTest
+  314  cd mergeTest
+  315  git clone -b main https://github.com/DanielAlDzhazzar/devsopsProj
+  316  cd devsopsProj
+  317  git status
+  318  git merge ONE-V1
+  319  git merge origin/ONE-V1
+  320  git push origin main
+  321  git remote set-url origin git@github.com:DanielAlDzhazzar/devsopsProj.git
+  322  git remote -v
+  323  git push origin main
+  324  git merge ONE-V2
+  325  git merge origin/ONE-V2
+  326  cat count1.sh
+  327  nano count1.sh
+  328  cat count1.sh
+  329  git add count1.sh
+  330  git commit -m "Merge ONE-V2 and keep ONE-V1"
+  331  git push origin main
+  332  cd ~
+  333  mkdir v1-2
+  334  cd v1-2
+  335  git clone -b main https://github.com/DanielAlDzhazzar/devsopsProj
+  336  cd devsopsProj
+  337  git checkout TWO-V1
+  338  git checkout -b TWO-V1
+  339  cd ~
+  340  mkdir v2-2
+  341  cd v2-2
+  342  git clone -b main https://github.com/DanielAlDzhazzar/devsopsProj
+  343  cd devsopsProj
+  344  git checkout -b TWO-V2
+  345  cd ~/v1-2/devsopsProj
+  346  nano count2.sh
+  347  ./count1.sh
+  348  git add count2.sh
+  349  git commit -m "Fixed count2 output to TWO(2), fixes #16"
+  350  git push origin TWO-V2
+  351  git push -u origin TWO-V2
+  352  git remote -v
+  353  git remote set-url origin git@github.com:DanielAlDzhazzar/devsopsProj.git
+  354  git remote -v
+  355  git branch
+  356  git push -u origin TWO-V1
+  357  cd ~/v2-2/devsopsProj
+  358  nano count2.sh
+  359  ./count1.sh
+  360  git remote set-url origin git@github.com:DanielAlDzhazzar/devsopsProj.git
+  361  git commit -m "Fixed count2 output to 2(TWO), fixes #17"
+  362  git add count2.sh
+  363  git commit -m "Fixed count2 output to 2(TWO), fixes #17"
+  364  git push -b origin TWO-2
+  365  git push -u origin TWO-2
+  366  git branch
+  367  git push -u origin TWO-V2
+  368  ssh -T git@github.com
+  369  gh repo create lab6 --public --confirm
+  370  gh auth login
+  371  gh repo create lab6 --public
+  372  gh api repos/DanielAlDzhazzar/lab6/collaborators/Dopadv -X PUT -f permission=push
+  373  gh api repos/DanielAlDzhazzar/lab6/invitations
+  374  gh api repos/DanielAlDzhazzar/lab6/collaborators --jq '.[].login'
+  375  gh api repos/DanielAlDzhazzar/lab6/collaborators/Dopadv -X DELETE
+  376  gh api repos/DanielAlDzhazzar/lab6/collaborators --jq '.[].login'
+  377  gh issue create   --repo DanielAlDzhazzar/lab6   --title "create helloworld echo file"   --body "echo hello Pearse from lab6"   --assignee @me   --label "enhancement"
+  378  ls
+  379  git clone git@github.com:DanielAlDzhazzar/lab6.git
+  380  cd lab6
+  381  git pull origin main
+  382  git checkout -b Q12345
+  383  nano q1.sh
+  384  nano q2.sh
+  385  nano q3.sh
+  386  nano q4.sh
+  387  nano q5.sh
+  388  git add .
+  389  git commit -m "Answers for questions from 1 to 5"
+  390  git push -u origin Q12345 
+  391  gh pr create   --repo DanielAlDzhazzar/lab6   --base main   --head Q12345   --title "Merge Q12345 and main"   --body "Add q scipts from Q12345 to main"
+  392  gh pr merge --merge
+  393  git checkout main
+  394  git pull origin main
+  395  ls
+  396  nano q7.sh
+  397  nano q8.sh
+  398  git add q7.sh q8.sh
+  399  git commit -m "Add answers for questions 7 and 8"
+  400  git push origin main
+  401  ls
+  402  cd devopsWeek1
+  403  git checkout main
+  404  ls
+  405  git pull origin main
+  406  ls
+  407  git checkout -b CR101
+  408  nano cr101.sh
+  409  git add cr101.sh
+  410  git commit -m "Add cr101"
+  411  git push -u origin CR101
+  412  git checkout origin main
+  413  git checkout main
+  414  git checkout -b CR102
+  415  nano cr102.sh
+  416  git add cr102.sh
+  417  git commit -m "Add cr102"
+  418  git push -u origin CR102
+  419  got checkout main
+  420  git pull origin main
+  421  ls
+  422  git merge CR102
+  423  git checkout main
+  424  git pull
+  425  ls
+  426  git merge CR102
+  427  git push origin main
+  428  git branch -d CR102
+  429  ls
+  430  св devopsCollab
+  431  cd devopsCollab
+  432  ls
+  433  git
+  434  git status
+  435  nano test.txt
+  436  git add test.txt
+  437  git commit -m "Connection test"
+  438  git push origin main
+  439  ssh -T git@GitHub.com
+  440  ls
+  441  cd devopsCollab
+  442  ls
+  443  clear
+  444  ls
+  445  mkdir CA1
+  446  cd CA1
+  447  git clone https://github.com/pearse1104/CA1-SOFTWARE
+  448  ls
+  449  ./CA1-SOFTWARE
+  450  ./ CA1-SOFTWARE
+  451  ls
+  452  cd CA1-SOFTWARE
+  453  LS
+  454  ls
+  455  cd ~
+  456  rmdir CA1 --force
+  457  clear
+  458  ls
+  459  git clone https://github.com/pearse1104/CA1-SOFTWARE
+  460  ls
+  461  cd CA1-SOFTWARE
+  462  bash user-setup.sh
+  463  ls
+  464  cat user.txt
+  465  gh repo create devopsCA1sw --public
+  466  git remote add origin git@github.com:DanielAlDzhazzar/devopsCA1sw.git
+  467  git remote -v
+  468  git remote set-url origin git@github.com:DanielAlDzhazzar/devopsCA1sw.git
+  469  git remote -v
+  470  ls
+  471  git add .
+  472  git commit -m "Initial file commit"
+  473  git branch -M main
+  474  git push -u origin main
+  475  ls
+  476  nano user-setup.sh
+  477  cd ~
+  478  ls
+  479  cd devopsCollab
+  480  nano user-setup.sh
+  481  chmod +x user-setup.sh
+  482  bash user-setup.sh
+  483  ls
+  484  cat user.txt
+  485  git add .
+  486  git commit -m "Add user-setup.sh and user.txt"
+  487  git push origin main
+  488  git checkout -b myCA1branch
+  489  nano user.txt
+  490  git add user.txt
+  491  git commit -m "version2"
+  492  git push -u origin myCA1branch
+  493  git switch main
+  494  git merge myCA1branch
+  495  git push origin main
+  496  history > history.txt
+  497  cat history.txt
+  498  git add history.txt
+  499  git commit -m "commands history"
+  500  git push origin main
+  501  ls
+  502  gh repo create lab9 --public
+  503  git remote add origin git@github.com:DanielAlDzhazzar/lab9.git
+  504  clear
+  505  ls
+  506  mkdir lab9
+  507  cd lab9
+  508  git init
+  509  git branch -M main
+  510  git remote add origin git@github.com:DanielAlDzhazzar/lab9.git
+  511  git commit -m "first commit"
+  512  git push -u origin main
+  513  gh label create EPIC --color "FFFF00" --description "Epic"
+  514  gh issue create --title "do lab9" --label EPIC --body "Do Lab 9"
+  515  gh issue create --title "create validate-data script" --label enhancement --assignee @me
+  516  gh issue create --title "create yaml test script" --label enhancement --assignee @m
+  517  gh issue create --title "create yaml test script" --label enhancement --assignee @me
+  518  nano validate-data.sh
+  519  ./validate-data.sh "Daniel" "0830813389"
+  520  chmod -x validate-data.sh
+  521  ./validate-data.sh "Daniel" "0830813389"
+  522  chmod -X validate-data.sh
+  523  ./validate-data.sh "Daniel" "0830813389"
+  524  chmod +x validate-data.sh
+  525  ./validate-data.sh "Daniel" "0830813389"
+  526  nano validate-data.sh
+  527  ./validate-data.sh "Daniel" "0830813389"
+  528  ./validate-data.sh "DanielAndSomeTextToFail" "000000000000000000000830813389"
+  529  ./validate-data.sh "Daniel" "000000000000000000000830813389"
+  530  ./validate-data.sh "DanielAndSomeTextToFail" "0830813389"
+  531  nano basictests.yml
+  532  git add .
+  533  git commit -m "Add validate-data and basictests"
+  534  git push origin main
+  535  nano basictests.yml
+  536  git add basictests.yml
+  537  git commit -m "fix to basictests.yml"
+  538  git push origin main
+  539  cd ~
+  540  cd lab9
+  541  ls
+  542  mkdir -p .github/workflows
+  543  cp validate-data.sh /.github/workflows/
+  544  ls
+  545  mkdir -p .github/workflows
+  546  ls
+  547  ls -a
+  548  cp basictests.yml .github/workflows/
+  549  ls .github/workflows/
+  550  rm basictests.yml
+  551  ls
+  552  ls .github/workflows/
+  553  git add .
+  554  cd .github/workflows/
+  555  ls
+  556  nano basictests.yml
+  557  git ~/lab9
+  558  cd ~/lab9
+  559  git add .
+  560  git commit "Fix basictests.yml now in correct location"
+  561  git commit -m "Fix basictests.yml now in correct location"
+  562  git push origin main
+  563  git push --force-with-lease origin main
+  564  git push --force origin main
+  565  gh issue create --title "create project view" --label enhancement --assignee @me
+  566  gh issue create --title "create test branch" --label enhancement --assignee @me
+  567  git checkout -b test
+  568  ls
+  569  nano validate-data.sh
+  570  git add .
+  571  git commit -m "change validate-data.sh to check length to 20"
+  572  git push -u origin test
+  573  cat .github/workflows/basictests.yml
+  574  history > history.txt
