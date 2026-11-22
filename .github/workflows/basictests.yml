@@ -11,6 +11,6 @@ jobs:
         run: chmod +x validate-data.sh
       - name: Run validation tests
         run: |
-          ./validate-data.sh "Daniel" "0830813389"
-          ./validate-data.sh "DanielAndSomeTextToFail" "0830813389"
-          ./validate-data.sh "Daniel" "000000000000000000830813389"
+          ./validate-data.sh "pearse mccarthy" "0831122334"
+          ./validate-data.sh "pearse mccarthy" "08311223344"
+          ./validate-data.sh "pearseT mccarthy" "0831122334"
